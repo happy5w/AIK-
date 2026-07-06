@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Zen Maru Gothic", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary-red: #E53E3E;
+  --color-accent-orange: #F6AD55;
+  --color-dark-orange: #DD6B20;
+  --color-bg-pink: #FFF5F5;
+  --color-text-charcoal: #2D3748;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-pink); /* #FFF5F5 */
+  color: var(--color-text-charcoal);
+}
+
+/* ポップで跳ねるような可愛いホバー効果 */
+.pop-bounce {
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.15s ease;
+}
+.pop-bounce:hover {
+  transform: scale(1.02) translateY(-2px);
+}
+.pop-bounce:active {
+  transform: scale(0.98) translateY(1px);
+}
+
+/* 可愛い紙吹雪やストライプの背景装飾 */
+.stripes-pattern {
+  background-image: repeating-linear-gradient(45deg, #ffeef0 0px, #ffeef0 10px, #ffffff 10px, #ffffff 20px);
+}
+
+/* ポップな3D影（ネオブルータリズム風） */
+.pop-shadow-red {
+  box-shadow: 6px 6px 0px #E53E3E;
+}
+.pop-shadow-orange {
+  box-shadow: 6px 6px 0px #DD6B20;
+}
+.pop-shadow-charcoal {
+  box-shadow: 6px 6px 0px #2D3748;
+}
+.pop-shadow-pink {
+  box-shadow: 6px 6px 0px #FED7D7;
+}
+

@@ -1,0 +1,6 @@
+{
+  "name": "どうぶつふれあい体験予約",
+  "description": "動物専門学校の学園祭用、ポップで可愛いリアルタイム整理券予約・管理システムです。赤色メインのデザイン。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
